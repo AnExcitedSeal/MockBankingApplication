@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E5BF892-0F07-4BC3-8A3B-8AE1D007BC66}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BankApplicationTellers</RootNamespace>
+    <AssemblyName>BankApplicationTellers</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\BankIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\..\Documents\Visual Studio 2017\Projects\SQL\SQL\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AccountManagementFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AccountManagementFrm.Designer.cs">
+      <DependentUpon>AccountManagementFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BalanceManagementFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BalanceManagementFrm.Designer.cs">
+      <DependentUpon>BalanceManagementFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CreateCustomerAccountFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CreateCustomerAccountFrm.Designer.cs">
+      <DependentUpon>CreateCustomerAccountFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DeleteCustomerAccountFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DeleteCustomerAccountFrm.Designer.cs">
+      <DependentUpon>DeleteCustomerAccountFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\InfoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InfoFrm.Designer.cs">
+      <DependentUpon>InfoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoggedInAccountFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoggedInAccountFrm.Designer.cs">
+      <DependentUpon>LoggedInAccountFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginFrm.Designer.cs">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\TellerMainMenuFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TellerMainMenuFrm.Designer.cs">
+      <DependentUpon>TellerMainMenuFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ViewCustomerFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewCustomerFrm.Designer.cs">
+      <DependentUpon>ViewCustomerFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\AccountManagementFrm.resx">
+      <DependentUpon>AccountManagementFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BalanceManagementFrm.resx">
+      <DependentUpon>BalanceManagementFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CreateCustomerAccountFrm.resx">
+      <DependentUpon>CreateCustomerAccountFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DeleteCustomerAccountFrm.resx">
+      <DependentUpon>DeleteCustomerAccountFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InfoFrm.resx">
+      <DependentUpon>InfoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoggedInAccountFrm.resx">
+      <DependentUpon>LoggedInAccountFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginFrm.resx">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewCustomerFrm.resx">
+      <DependentUpon>ViewCustomerFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\TellerMainMenuFrm.resx">
+      <DependentUpon>TellerMainMenuFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-collapse-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-fit-to-width-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-museum-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-museum-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-about-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-twitter-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-facebook-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-play-button-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-instagram-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TellerLibrary\TellerLibrary.csproj">
+      <Project>{e097d392-22b5-4bea-aee2-08c1363fa0a3}</Project>
+      <Name>TellerLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\BankIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

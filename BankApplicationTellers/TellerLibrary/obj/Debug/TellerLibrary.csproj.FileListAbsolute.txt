@@ -1,0 +1,6 @@
+C:\Users\Rhys\Desktop\Bank\BankApplicationTellers\TellerLibrary\bin\Debug\TellerLibrary.dll
+C:\Users\Rhys\Desktop\Bank\BankApplicationTellers\TellerLibrary\bin\Debug\TellerLibrary.pdb
+C:\Users\Rhys\Desktop\Bank\BankApplicationTellers\TellerLibrary\obj\Debug\TellerLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Rhys\Desktop\Bank\BankApplicationTellers\TellerLibrary\obj\Debug\TellerLibrary.dll
+C:\Users\Rhys\Desktop\Bank\BankApplicationTellers\TellerLibrary\obj\Debug\TellerLibrary.pdb
+C:\Users\Rhys\Desktop\Bank\BankApplicationTellers\TellerLibrary\obj\Debug\TellerLibrary.csprojAssemblyReference.cache
